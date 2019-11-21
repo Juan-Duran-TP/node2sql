@@ -1,0 +1,17 @@
+{
+  "name": "nodesql",
+  "version": "1.0.0",
+  "description": "connecting a node server end point to SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "SQL"
+  ],
+  "author": "Juan Duran",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
