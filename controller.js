@@ -4,8 +4,8 @@ const service = require('./service.js');
 
 module.exports = http.createServer((req, res) => {
     const reqUrl = url.parse(req.url, true);
-
-    if (reqUrl.pathname == '/calculator/' && req.method === 'GET') {
+    res.setHeader("Access-Control-Allow-Origin","*");
+    if (reqUrl.pathname == '/' && req.method === 'GET') {
         console.log('Request Type:' +
             req.method + ' Endpoint: ' +
             reqUrl.pathname);

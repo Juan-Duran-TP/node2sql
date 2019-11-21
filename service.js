@@ -1,16 +1,12 @@
 const url = require('url');
-const Calculator = require('./Calculator.js')
+//const Calculator = require('./Calculator.js')
 
 exports.calculatorRequest = function (req, res) {
     const urlAddress = decodeURI(req.url).split('=');
     let response = "";
     let result = '';
-    if (urlAddress[0].substring(urlAddress[0].length - 3, urlAddress[0].length) === "/?q") {
-        expression = urlAddress[1].split("");
-        expression.shift();
-        expression.pop();
-        expression = expression.join("");
-        result = new Calculator().infixNotation(expression).equals();
+    if (true) {
+        result = "Dab"
         res.statusCode = 200;
         response = result.toString();
     }
