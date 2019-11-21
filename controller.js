@@ -5,7 +5,7 @@ const service = require('./service.js');
 module.exports = http.createServer((req, res) => {
     const reqUrl = url.parse(req.url, true);
     res.setHeader("Access-Control-Allow-Origin","*");
-    if (reqUrl.pathname == '/' && req.method === 'GET') {
+    if (reqUrl.pathname == '/test' && req.method === 'GET') {
         console.log('Request Type:' +
             req.method + ' Endpoint: ' +
             reqUrl.pathname);
